@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>BasicWebsite</title>
+    <title><%= yield(:title) %> | Basic</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,6 +9,8 @@
   </head>
   <body>
   	<%= render 'shared/navbar' %>
-    <%= yield %>
+  	<div class="main-page-content <%= controller.controller_name %>">
+  		<%= yield %>
+  	</div>
   </body>
 </html>
