@@ -1,24 +1,15 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This README is a list of steps taken to get my website up and running.
 
-Things you may want to cover:
+Rails 5.1.6
 
-* Ruby version
+* cd desktop
 
-* System dependencies
+* rails new basic_website
 
-* Configuration
+* bundle install
 
-* Database creation
+* rails generate controller home about contact
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* rails server
